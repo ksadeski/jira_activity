@@ -79,12 +79,12 @@
             //trying to print assignee names
              row.append("td").append('span')
                 // .classed({'project-name': true})
-                .classed({'project-assignee': true}) //no idea
-                .append("a")
+                .classed({'project-lead': true}) //no idea
+                // .append("a")
                 // .attr('href', function(item) {return projectBaseUrl + item.key;})
-                .attr('href', function(item) {return "neopets.com";})
-                .attr('target', "_top")
-                .text(function(item) {return item.assignee;}); //this works but not pulling assignee
+                // .attr('href', function() {return "neopets.com";})
+                // .attr('target', "_top") 
+                .text(function(item) {return "" + item.lead;}); //this works but not pulling assignee
             
              var rowCount = $("table tr").length-1;
              // projBody.append("tr").text("");
